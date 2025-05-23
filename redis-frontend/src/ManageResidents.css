@@ -1,0 +1,243 @@
+
+
+/* Ensure Sidebar and Content Fit Within Viewport */
+.manage-residents {
+  display: flex;
+  height: 100vh; /* Full height */
+  overflow: hidden; /* Prevent any content from overflowing */
+}
+
+/* Sidebar */
+.sidebar {
+  background: #333;
+  color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* Full height */
+  left: 0;
+  top: 0;
+  bottom: 0;
+  overflow: hidden; /* Prevent sidebar content from overflowing */
+}
+
+/* Main Content should not overlap Sidebar */
+.main-content {
+  flex-grow: 1;
+  padding: 20px;
+  overflow-x: hidden; /* Prevent sideways scrolling */
+}
+
+  .add-btn {
+    background: white;
+    color: #007bff;
+    border: 1px solid #007bff;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-right: 20px;
+  }
+  
+  .residents-table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+  }
+  
+  .residents-table th, .residents-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .residents-table th {
+    background: #007bff;
+    color: white;
+  }
+  
+ /* Modal */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 120%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 1200px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+
+  
+
+  .form-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group label {
+    font-weight: bold;
+  }
+  
+  .form-group input {
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .modal-actions {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+    
+  }
+  
+  .save-btn {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .close-btn {
+    background: #dc3545;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 10px;
+  }
+  
+  /* 🔍 Search Bar */
+.search-bar {
+  width: 100%;
+  max-width: 400px;
+  padding: 10px;
+  margin: 10px 0 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-bottom: 15px;
+ 
+}
+
+.search-upload-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  gap: 20px;
+}
+
+.csv-upload-btn {
+  padding: 8px 10px;
+  background-color: #28a745;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+  white-space: nowrap; /* Prevents text wrapping */
+}
+
+.csv-upload-btn:hover {
+  background-color: #218838;
+}
+
+/* Style the dropdown inside the table */
+.residents-table select {
+  width: 100%;
+  padding: 8px;
+  font-size: 14px;
+  border: none;
+  text-align: center;
+  font-weight: bold;
+  appearance: none; /* Remove default dropdown arrow */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  cursor: pointer;
+}
+
+/* Apply background color for status */
+.status-active {
+  background-color: #d4edda; /* Light green */
+  color: #155724; /* Dark green text */
+}
+
+.status-inactive {
+  background-color: #f8d7da; /* Light red */
+  color: #721c24; /* Dark red text */
+}
+
+/* Hover effect */
+.residents-table select:hover {
+  opacity: 0.9;
+}
+
+/* Remove outline on focus */
+.residents-table select:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  width: 300px;
+  text-align: center;
+}
+
+.modal-content p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.confirm-btn, .cancel-btn {
+  padding: 8px 12px;
+  border: none;
+  cursor: pointer;
+  margin: 5px;
+  border-radius: 5px;
+}
+
+.confirm-btn {
+  background-color: #007bff;
+  color: white;
+}
+
+.cancel-btn {
+  background-color: #dc3545;
+  color: white;
+}
+
+.csv-upload-btn input {
+  display: none;
+}
+
+
+

@@ -1,0 +1,327 @@
+.manage-officers {
+    display: flex;
+    overflow: hidden;
+    height: 100vh; /* Full height */
+  }
+  
+
+/* Main Content should not overlap Sidebar */
+.main-content {
+  flex-grow: 1;
+  padding: 20px;
+  overflow-x: hidden; /* Prevent sideways scrolling */
+}
+  
+  /* Header */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .search-input {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    width: 250px;
+  }
+  
+  /* Table */
+  .officers-table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+  }
+  
+  .officers-table th, .officers-table td {
+    border: 1px solid #ddd;
+  padding: 12px;                /* Add padding for better readability */
+  text-align: center;             /* Align text to the left */
+  word-wrap: break-word;        /* Prevent text from overflowing by wrapping it */
+  }
+  
+  .officers-table th {
+    background: #007bff;
+    color: white;
+  }
+  
+  /* Status Dropdown */
+  .status-dropdown {
+    padding: 5px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+  }
+  
+  /* Color-coded status */
+  .status-dropdown.active {
+    background: green;
+    color: white;
+  }
+  
+  .status-dropdown.inactive {
+    background: red;
+    color: white;
+  }
+  
+  /* Role Dropdown */
+  .role-dropdown {
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+  }
+  
+  /* Delete Button */
+  .delete-btn {
+    background-color: red;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .delete-btn:hover {
+    background-color: darkred;
+  }
+  
+  /* Modal */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 50%;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.modal h2 {
+  margin-bottom: 15px;
+}
+
+/* Form Grid */
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.form-group label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group select {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 14px;
+  transition: border-color 0.3s ease;
+}
+
+/* Modal Actions */
+.modal-actions {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.submit-btn {
+  background: #28a745;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.submit-btn:hover {
+  background: #218838;
+}
+
+.close-btn {
+  background: #dc3545;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.close-btn:hover {
+  background: #c82333;
+}
+
+/* Status Dropdown */
+.status-dropdown {
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  transition: all 0.3s ease;
+  background-color: #f9f9f9;
+}
+
+.status-dropdown.active {
+  background-color: green;
+  color: white;
+  border: 1px solid green;
+}
+
+.status-dropdown.inactive {
+  background-color: red;
+  color: white;
+  border: 1px solid red;
+}
+
+.status-dropdown:hover {
+  background-color: #e2e6ea;
+  border-color: #ddd;
+}
+
+/* Role Dropdown */
+.role-dropdown {
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: #f9f9f9;
+  transition: all 0.3s ease;
+}
+
+.role-dropdown:hover {
+  background-color: #e2e6ea;
+  border-color: #ddd;
+}
+
+.role-dropdown option {
+  padding: 10px;
+  font-weight: normal;
+}
+
+.role-dropdown:focus,
+.status-dropdown:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+  
+  /* Buttons */
+  button {
+    cursor: pointer;
+    border: none;
+    padding: 4px 5px;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: all 0.3s ease-in-out;
+    
+  }
+  
+  .view-btn {
+    background: #17a2b8;
+    color: white;
+  }
+  
+  .view-btn:hover {
+    background: #138496;
+  }
+  
+  .edit-btn {
+    background: #ffc107;
+    color: black;
+  }
+  
+  .edit-btn:hover {
+    background: #e0a800;
+  }
+  
+  .delete-btn {
+    background-color: red;
+    color: white;
+  }
+  
+  .delete-btn:hover {
+    background-color: darkred;
+  }
+
+  /* Optional: Add spacing between action buttons */
+.view-btn {
+  margin-right: 10px; /* Space between view and edit button */
+}
+
+.edit-btn {
+  margin-right: 10px; /* Space between edit and delete button */
+}
+
+/* Apply background color for status */
+.status-active {
+  background-color: #d4edda; /* Light green */
+  color: #155724; /* Dark green text */
+}
+
+.status-inactive {
+  background-color: #f8d7da; /* Light red */
+  color: #721c24; /* Dark red text */
+}
+
+/* Style the select dropdown inside the officers table */
+.officers-table select {
+  width: 100%;
+  padding: 8px;
+  font-size: 14px;
+  border: none;
+  text-align: center;
+  font-weight: bold;
+  appearance: none; /* Remove default dropdown arrow */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  cursor: pointer;
+}
+
+/* Hover effect on select */
+.officers-table select:hover {
+  opacity: 0.9;
+}
+
+/* Focus effect */
+.officers-table select:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Style the select options */
+.officers-table select option {
+  padding: 6px;
+  background-color: white;
+  color: black;
+}

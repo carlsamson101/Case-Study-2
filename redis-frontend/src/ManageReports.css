@@ -1,0 +1,134 @@
+.manage-reports {
+    display: flex;
+    min-height: 100vh;
+  }
+  
+
+  
+  .sidebar h2 {
+    margin-bottom: 20px;
+  }
+  
+  .sidebar ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .sidebar li {
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .sidebar li:hover {
+    background-color: #34495e;
+  }
+  
+  .sidebar .divider {
+    margin: 20px 0;
+    border-top: 1px solid #7f8c8d;
+  }
+  
+  .sidebar li.active {
+    background-color: #16a085;
+  }
+  
+  .sidebar .logout {
+    background-color: #e74c3c;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    margin-top: 20px;
+  }
+  
+  .content {
+    flex: 1;
+    padding: 20px;
+    background-color: #ecf0f1;
+  }
+  
+  .reports-table {
+    margin-top: 20px;
+    border: 1px solid #bdc3c7;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  .reports-table table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .reports-table th, .reports-table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #bdc3c7;
+  }
+  
+  .reports-table tr:hover {
+    background-color: #f0f3f4;
+  }
+  
+  .reports-table button {
+    background-color: #16a085;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .reports-table button:hover {
+    background-color: #1abc9c;
+  }
+  
+  .error {
+    color: #e74c3c;
+    margin-top: 10px;
+  }
+
+  .reports-table select {
+    padding: 5px;
+    border-radius: 3px;
+    border: 1px solid #bdc3c7;
+    background-color: #fff;
+    font-size: 14px;
+  }
+  
+  .reports-table select:focus {
+    border-color: #16a085;
+    outline: none;
+  }
+  
+  .reports-table button {
+    background-color: #16a085;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .reports-table button:hover {
+    background-color: #1abc9c;
+  }
+
+  .success-dialog {
+    background-color: #d4edda;
+    color: #155724;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #c3e6cb;
+    font-weight: bold;
+    animation: fadeInOut 3s ease-in-out;
+  }
+  
+  @keyframes fadeInOut {
+    0% { opacity: 0; }
+    10% { opacity: 1; }
+    90% { opacity: 1; }
+    100% { opacity: 0; }
+  }

@@ -1,0 +1,237 @@
+/* Header Section */
+.headerSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    text-align: center;
+}
+
+/* Barangay Logo - Positioned in Upper Left */
+.logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 170px;
+    height: 170px;
+    margin-left: 30px;
+}
+
+.headerSection p {
+    margin: 0;
+    line-height: 1.4;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Modal Overlay */
+.modalOverlay {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90%;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+/* Modal Content */
+.modalContent {
+    background: white;
+    padding: 20px;
+    width: 900px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+    position: relative;
+    height: 130vh;
+    max-height: 100%;
+    overflow-y: auto;
+}
+
+/* Barangay Clearance Document */
+.clearanceDocument {
+    border: 2px solid black;
+    padding: 25px 20px;
+    font-family: "Times New Roman", serif;
+    text-align: center;
+    background: white;
+    position: relative;
+}
+
+/* Barangay Name */
+.barangayName {
+    font-size: 26px;
+    font-weight: bold;
+    color: #007bff;
+    margin-bottom: 5px;
+}
+
+/* Clearance Title */
+.clearanceTitle {
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: underline;
+    margin-top: 20px;
+}
+
+/* "To Whom It May Concern" */
+.toWhom {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+/* Certification paragraph */
+.certifyText {
+    text-align: justify;
+    font-size: 18px;
+    margin: 15px 0;
+}
+
+/* Issued Date */
+.issuedDate {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Signature and Captain Title */
+.captainSignature {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.captainTitle {
+    font-size: 16px;
+    font-style: italic;
+}
+
+/* Footer Details */
+.documentFooter {
+    margin-top: 20px;
+    text-align: left;
+    font-size: 16px;
+}
+
+.documentFooter p {
+    margin: 5px 0;
+}
+
+/* Buttons */
+.btn {
+    padding: 10px 16px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 15px;
+    border: none;
+    border-radius: 6px;
+    background-color: #007bff;
+    color: white;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+/* Print Button */
+.printBtn {
+    background-color: green;
+}
+
+.printBtn:hover {
+    background-color: darkgreen;
+}
+
+/* Close Button */
+.closeBtn {
+    background-color: red;
+    margin-left: 20px;
+}
+
+.closeBtn:hover {
+    background-color: darkred;
+}
+
+/* Form inside the Barangay Clearance modal */
+.form {
+    width: 300px;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 180px;
+    margin-top: 200px;
+}
+
+/* Title styling */
+.modalTitle {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Resident ID text */
+.residentId {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+/* Generate button */
+.generateBtn {
+    width: 100%;
+    padding: 8px;
+    background: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+/* Modal Container */
+.form {
+    width: 500px;  /* Adjust width */
+    max-width: 90%; /* Make it responsive */
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+/* Modal Title */
+.modalTitle {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+/* Resident ID */
+.residentId {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* Button Styles */
+.btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.generateBtn {
+    background: #28a745;  /* Green */
+    color: white;
+}
+
+.generateBtn:hover {
+    background: #218838;  /* Darker Green */
+}
