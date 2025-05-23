@@ -1,0 +1,35 @@
+{
+  "expo": {
+    "name": "My Mobile App",
+    "slug": "my-mobile-app",
+    "platforms": [
+      "ios",
+      "android",
+      "web"
+    ],
+    "version": "1.0.0",
+     "scheme": "barangaydalipuga", 
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+      "enabled": true
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+            "bundleIdentifier": "com.yourapp.barangaydalipuga"
+    },
+    "android": {
+      "package": "com.yourapp.barangaydalipuga"
+    },
+    "plugins": [
+      "expo-router"
+    ]
+  }
+}
