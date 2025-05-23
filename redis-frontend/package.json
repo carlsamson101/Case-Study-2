@@ -1,0 +1,50 @@
+{
+  "name": "redis-frontend",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@react-navigation/native": "^7.1.9",
+    "axios": "^1.7.9",
+    "cra-template": "1.3.0",
+    "expo": "^53.0.9",
+    "jspdf": "^3.0.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-modal": "^3.16.3",
+    "react-native-safe-area-context": "^5.4.0",
+    "react-native-screens": "^4.10.0",
+    "react-qr-code": "^2.0.15",
+    "react-router-dom": "^7.2.0",
+    "react-scripts": "5.0.1",
+    "react-toastify": "^11.0.3",
+    "recharts": "^2.15.1",
+    "web-vitals": "^4.2.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@types/react": "~19.0.10"
+  }
+}
